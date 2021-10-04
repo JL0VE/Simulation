@@ -22,14 +22,12 @@ public class User {
 	/**
 	 * This method adds the hit that was placed on the user to the total score
 	 * it also returns true if the player is still 21 or under
-	 * @param The card amount hit
+	 * @param hit The card amount hit
 	 * @return false if bust else true
 	 */
 	public boolean add(int hit) {
 		score += hit;
-		if (score > 21) 
-			return false;
-		return true;
+		return score <= 21;
 	}
 	
 	/**
@@ -37,8 +35,7 @@ public class User {
 	 * @return int score of the user
 	 */
 	public int getScore() {
-		int copyScore = score;
-		return copyScore;
+		return score;
 	}
 	
 	/**
@@ -46,10 +43,6 @@ public class User {
 	 * @return ArrayList<Integer>
 	 */
 	public ArrayList<Integer> getCards() {
-		ArrayList<Integer> copyCards = new ArrayList<Integer>();
-		for (int i = 0; i < cards.size(); i++) {
-			copyCards.add(cards.get(i));
-		}
-		return copyCards;
+		return new ArrayList<Integer>(cards);
 	}
 }

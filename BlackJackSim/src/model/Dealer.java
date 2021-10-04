@@ -10,13 +10,10 @@ public class Dealer {
 	
 	public boolean add(int hit) {
 		score += hit;
-		if (score > 21) 
-			return false;
-		return true;
+		return score <= 21;
 	}
 	
 	public int getScore() {
-		int copyScore = score;
-		return copyScore;
+		return score;
 	}
 }

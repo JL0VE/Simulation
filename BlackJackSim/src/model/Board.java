@@ -38,5 +38,20 @@ public class Board {
 	public boolean getTurn() {
 		return turn;
 	}
-	
+
+	public void setaUser(User aUser) {
+		this.aUser = aUser;
+	}
+
+	public void setaDealer(Dealer aDealer) {
+		this.aDealer = aDealer;
+	}
+
+	public void setTurn(boolean turn) {
+		this.turn = turn;
+	}
+
+	public void setPot(long pot) {
+		this.pot = pot;
+	}
 }

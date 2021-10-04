@@ -22,6 +22,7 @@ public class StartFrame extends JFrame {
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
+					frame = new StartFrame();
 				}
 			}
 		});

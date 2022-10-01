@@ -37,8 +37,7 @@ public class User {
 	 * @return int score of the user
 	 */
 	public int getScore() {
-		int copyScore = score;
-		return copyScore;
+		return score;
 	}
 	
 	/**
